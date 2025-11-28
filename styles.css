@@ -1,0 +1,149 @@
+/* Palette: rust / sage (two vertical bands) */
+:root{
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	color: #263033; /* darker text for contrast */
+	/* two horizontal color bands: rust (top) and sage (bottom) */
+	background: linear-gradient(180deg,
+		#B85A45 0% 50%,
+		#BFD3C7 50% 100%);
+}
+body{
+	margin:0;
+	padding:24px;
+	/* keep the page background visible and center content */
+	min-height:100vh;
+	box-sizing:border-box;
+}
+/* center the main area by default */
+header{ text-align:center; margin-bottom:18px; color: #1f2a28; }
+
+/* puzzles container */
+#puzzles{
+	width: min(900px, 95%);
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+/* card styling tuned to the new palette */
+.card{
+	background: rgba(255,255,255,0.92);
+	border: 1px solid rgba(22,28,26,0.06);
+	border-radius: 12px;
+	width: 100%;
+	max-width: 760px;
+	padding: 18px;
+	box-sizing: border-box;
+	font-size: 1.05rem;
+	text-align: center;
+	box-shadow: 0 10px 30px rgba(15,20,18,0.08);
+	opacity: 0;
+	transform: translateY(8px);
+	transition: opacity .34s ease, transform .28s ease;
+}
+.card.show{
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Image container with fixed aspect ratio */
+.img-container {
+	position: relative;
+	width: 100%;
+	padding-top: 66.66%; /* 3:2 aspect ratio */
+	background: rgba(0,0,0,0.02);
+	border-radius: 8px;
+	margin: 0 auto 12px auto;
+}
+
+.card img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	border-radius:8px;
+	transition: opacity .32s ease;
+	opacity: 0;
+}
+
+
+/* controls: larger inputs/buttons for readability */
+.controls{
+	display:flex;
+	gap:10px;
+	margin-top:12px;
+	align-items:center;
+}
+
+/* input styling */
+.controls input{
+	flex:1;
+	padding:10px 12px;
+	border:1px solid rgba(38,48,50,0.08);
+	border-radius:8px;
+	font-size:1rem;
+	background: #fff;
+	color: #263033;
+}
+
+/* primary button: rust color */
+.controls button{
+	padding:10px 12px;
+	border:none;
+	background:#B85A45; /* rust */
+	color:#fff;
+	border-radius:8px;
+	cursor:pointer;
+	font-weight:600;
+}
+
+/* secondary button: sage */
+.controls button.secondary{
+	background:#8DAF9E; /* softer sage */
+	color:#083427;
+}
+
+/* hover states */
+.controls button:hover{ filter:brightness(0.95); }
+.controls button.secondary:hover{ filter:brightness(0.98); }
+
+/* answer and feedback */
+.answer{
+	margin-top:10px;
+	font-weight:700;
+	color:#2b7a5f; /* deep sage green */
+	display:none;
+}
+.feedback{
+	margin-top:8px;
+	font-size:0.98rem;
+	color:#28403d;
+}
+
+/* small helper text and footer */
+small{ color:rgba(10,15,13,0.6); display:block; margin-top:6px; }
+footer{ text-align:center; margin-top:18px; color:rgba(10,15,13,0.6); font-size:0.95rem; padding-top: 38px; }
+
+/* improved superscript styling for decorative copyright symbol */
+footer p { display: inline-block; position: relative; }
+footer .copyright-symbol {
+	display: inline-block;
+	font-size: 0.7em;         /* smaller than main text */
+	color: rgba(10,15,13,0.55); /* softer color */
+	margin-left: 3px;
+	position: relative;
+	top: -0.28em;             /* lift a bit to appear superscript */
+	letter-spacing: 0;
+	line-height: 1;
+	transform: translateY(-0.05em); /* sub-pixel tweak for better alignment */
+}
+
+/* subtle responsive tweaks */
+@media (min-width:900px){
+	.controls input{ font-size:1.05rem; padding:12px; }
+	.controls button{ font-size:1.02rem; padding:11px 14px; }
+}
