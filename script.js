@@ -6,7 +6,18 @@ function init() {
 		"Long legs", "Advice", "Spaceman", "Big bad wolf", "Many thanks or thanks a lot",
 		"Download", "No idea", "Comfortable", "Forty years", "Excuse me", "Forehead",
 		"Good looking", "Waterfall", "Wake up", "Tuna fish", "Foreign language", "Seahorse",
-		"Middle-aged", "Broken heart", "Seesaw", "Miss you or missing you", "Teabag"
+		"Middle aged", "Broken heart", "Seesaw", "Miss you or missing you", "Teabag",
+		"Four-wheel drive", "Apple pie", "Up to you", "Robin Hood", "Design", "Engineer",
+		"Vegetables", "Afternoon tea", "Camping overnight", "Time to go", "Long time no see",
+		"Polite",
+		// 49-60 (existing)
+		"Fishing hook", "Farm animal / Animal farm", "Touchdown", "Honeybee", "Cornerstone",
+		"Love at first sight", "Freeze over", "Caveman / Mancave", "Catwalk",
+		"Hiking in the woods (High king)", "Sandbox", "Lovebirds",
+		// 61-72 (new puzzles)
+		"Crossbow", "Eggs over easy", "Coffee break", "Multiple choice", "Come into season",
+		"I'll get over it", "Raincheck", "I'm bigger than you", "Illegal (ill eagle)",
+		"Double agent", "Rock n roll", "Good afternoon"
 	];
 
 	const MATCH_KEYWORDS = [
@@ -16,7 +27,45 @@ function init() {
 		["spaceman"], ["bigbadwolf"], ["manythanks","thanksalot"], ["download"], ["noidea"],
 		["comfortable"], ["fortyyears","40years"], ["excuseme"], ["forehead"], ["goodlooking"],
 		["waterfall"], ["wakeup"], ["tunafish"], ["foreignlanguage"], ["seahorse"], ["middleaged"],
-		["brokenheart"], ["seesaw"], ["missyou","missingyou"], ["teabag"]
+		["brokenheart"], ["seesaw"], ["missyou","missingyou"], ["teabag"],
+		["fourwheeldrive","4x4","four wheel drive","four-wheel"], //37
+		["applepie","apple pie"], //38
+		["uptoyou","up to you","itsuptoyou","its up to you","itsuptoyou"], //39
+		["robinhood","robin hood"], //40
+		["design","designer"], //41
+		["engineer","engineering","eng"], //42
+		["vegetables","veggies","veg"], //43
+		["afternoontea","afternoon tea","tea"], //44
+		["campingovernight","camping","overnightcamping","camp overnight"], //45
+		["timetogo","time to go","its time to go","its time to go"], //46
+		["longtimenosee","long time no see","long time nosee","longtime no see"], //47
+		["polite","politeness","polite please"], //48
+		// 49-60 keywords
+		["fishinghook","fishing","hook","fishhook"], //49
+		["farmanimal","animalfarm","farm animal","animal farm"], //50
+		["touchdown","touch down","td"], //51
+		["honeybee","honey bee","bee"], //52
+		["cornerstone","corner stone","corner"], //53
+		["loveatfirstsight","loveatfirst","firstsight"], //54
+		["freezeover","freeze over","frozenover"], //55
+		["caveman","mancave","man cave","cave man"], //56
+		["catwalk","cat walk"], //57
+		["hikinginthewoods","hiking","highking","high king"], //58
+		["sandbox","sand box"], //59
+		["lovebirds","love birds","lovebird"], //60
+		// 61-72 keywords
+		["crossbow","cross bow","bow"], //61
+		["eggsovereasy","eggs over easy","eggs"], //62
+		["coffeebreak","coffee break","coffee"], //63
+		["multiplechoice","multiple choice","mcq"], //64
+		["comeintoseason","come into season","in season"], //65
+		["illgettoverit","ill get over it","i'll get over it","get over it"], //66
+		["raincheck","rain check"], //67
+		["imbiggerthanyou","im bigger than you","i'm bigger than you","bigger than you"], //68
+		["illegal","ill eagle","ill-eagle"], //69
+		["doubleagent","double agent","spy"], //70
+		["rocknroll","rock n roll","rock and roll"], //71
+		["goodafternoon","good afternoon","afternoon"] //72
 	];
 
 	const container = document.getElementById('puzzles');
