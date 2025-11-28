@@ -14,10 +14,14 @@ function init() {
 		"Fishing hook", "Farm animal / Animal farm", "Touchdown", "Honeybee", "Cornerstone",
 		"Love at first sight", "Freeze over", "Caveman / Mancave", "Catwalk",
 		"Hiking in the woods (High king)", "Sandbox", "Lovebirds",
-		// 61-72 (new puzzles)
+		// 61-72 (existing)
 		"Crossbow", "Eggs over easy", "Coffee break", "Multiple choice", "Come into season",
 		"I'll get over it", "Raincheck", "I'm bigger than you", "Illegal (ill eagle)",
-		"Double agent", "Rock n roll", "Good afternoon"
+		"Double agent", "Rock n roll", "Good afternoon",
+		// 73-84 (new puzzles)
+		"Look me in the eye", "Electric blanket", "Banknote", "One foot in the door",
+		"Bookcase", "Five kilograms overweight", "Highway", "Way to go",
+		"Toothpick", "Underdogs", "Heartbeat", "Light rain"
 	];
 
 	const MATCH_KEYWORDS = [
@@ -65,7 +69,20 @@ function init() {
 		["illegal","ill eagle","ill-eagle"], //69
 		["doubleagent","double agent","spy"], //70
 		["rocknroll","rock n roll","rock and roll"], //71
-		["goodafternoon","good afternoon","afternoon"] //72
+		["goodafternoon","good afternoon","afternoon"], //72
+		// 73-84 keywords
+		["lookmeintheeye","look me in the eye","look me in eyes"], //73
+		["electricblanket","electric blanket"], //74
+		["banknote","bank note","note"], //75
+		["onefootinthedoor","one foot in the door","one foot"], //76
+		["bookcase","book case","bookshelf"], //77
+		["fivekilogramsoverweight","five kilograms overweight","5kg overweight","five kg overweight"], //78
+		["highway","high way","motorway"], //79
+		["waytogo","way to go","well done"], //80
+		["toothpick","tooth pick"], //81
+		["underdogs","under dogs","underdog"], //82
+		["heartbeat","heart beat"], //83
+		["lightrain","light rain","drizzle"] //84
 	];
 
 	const container = document.getElementById('puzzles');
