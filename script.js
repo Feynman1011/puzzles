@@ -108,6 +108,17 @@ function init() {
 		return false;
 	}
 
+	// perform check using currentIndex and UI elements
+	function performCheck() {
+		const guess = input.value.trim();
+		if (!guess) {
+			feedback.textContent = 'Enter a guess first.';
+			return;
+		}
+		const correct = isCorrect(currentIndex, guess);
+		feedback.textContent = correct ? 'Correct!' : 'Not quite.';
+	}
+
 	// Create a single, persistent card
 	const card = document.createElement('section');
 	card.className = 'card';
@@ -129,9 +140,16 @@ function init() {
 	input.placeholder = 'Type your guess here';
 	controls.appendChild(input);
 
+	// trigger check on Enter key (added once)
+	input.addEventListener('keydown', (e) => {
+		if (e.key === 'Enter') performCheck();
+	});
+
 	const checkBtn = document.createElement('button');
 	checkBtn.textContent = 'Check';
 	controls.appendChild(checkBtn);
+	// use centralized check handler
+	checkBtn.onclick = performCheck;
 
 	const revealBtn = document.createElement('button');
 	revealBtn.textContent = 'Reveal answer';
@@ -191,16 +209,6 @@ function init() {
 			feedback.textContent = '';
 			input.value = '';
 			pager.textContent = `${index + 1} / ${answers.length}`;
-
-			checkBtn.onclick = () => {
-				const guess = input.value.trim();
-				if (!guess) {
-					feedback.textContent = 'Enter a guess first.';
-					return;
-				}
-				const correct = isCorrect(index, guess);
-				feedback.textContent = correct ? 'Correct!' : 'Not quite.';
-			};
 
 			revealBtn.onclick = () => {
 				answerEl.style.display = 'block';
