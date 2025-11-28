@@ -111,6 +111,26 @@ header{ text-align:center; margin-bottom:18px; color: #1f2a28; }
 .controls button:hover{ filter:brightness(0.95); }
 .controls button.secondary:hover{ filter:brightness(0.98); }
 
+.nav {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	align-items: center;
+	margin: 14px 0;
+}
+
+.nav button {
+	font-size: 1rem;
+	padding: 8px 12px;
+}
+
+#pager {
+	min-width: 100px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.05rem;
+}
+
 /* answer and feedback */
 .answer{
 	margin-top:10px;
@@ -126,7 +146,7 @@ header{ text-align:center; margin-bottom:18px; color: #1f2a28; }
 
 /* small helper text and footer */
 small{ color:rgba(10,15,13,0.6); display:block; margin-top:6px; }
-footer{ text-align:center; margin-top:18px; color:rgba(10,15,13,0.6); font-size:0.95rem; padding-top: 38px; }
+footer{ text-align:center; margin-top:18px; color:rgba(10,15,13,0.6); font-size:0.95rem; padding-top: 32px; }
 
 /* improved superscript styling for decorative copyright symbol */
 footer p { display: inline-block; position: relative; }
