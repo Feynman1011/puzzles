@@ -18,10 +18,16 @@ function init() {
 		"Crossbow", "Eggs over easy", "Coffee break", "Multiple choice", "Come into season",
 		"I'll get over it", "Raincheck", "I'm bigger than you", "Illegal (ill eagle)",
 		"Double agent", "Rock n roll", "Good afternoon",
-		// 73-84 (new puzzles)
+		// 73-84 (existing)
 		"Look me in the eye", "Electric blanket", "Banknote", "One foot in the door",
 		"Bookcase", "Five kilograms overweight", "Highway", "Way to go",
-		"Toothpick", "Underdogs", "Heartbeat", "Light rain"
+		"Toothpick", "Underdogs", "Heartbeat", "Light rain",
+		// 85-96 (new)
+		"Sunroof", "X-ray", "Doghouse", "Excuse me", "French fry", "Pardon me",
+		"Mousetrap", "Turnip", "Phone numbers", "Uproar", "Thunderstorm", "Weekend",
+		// 97-108 (new)
+		"Microscope", "One night stand", "Eye sockets", "Houseplant", "Neighbourhood",
+		"Failure", "Headquarters", "Blanket", "Cut corners", "Cocktail", "Tennis shoes", "Summary"
 	];
 
 	const MATCH_KEYWORDS = [
@@ -82,7 +88,33 @@ function init() {
 		["toothpick","tooth pick"], //81
 		["underdogs","under dogs","underdog"], //82
 		["heartbeat","heart beat"], //83
-		["lightrain","light rain","drizzle"] //84
+		["lightrain","light rain","drizzle"], //84
+		// 85-96 keywords
+		["sunroof","sun roof"], //85
+		["xray","x ray","x-ray"], //86
+		["doghouse","dog house","dog house"], //87
+		["excuseme","excuse","pardon"], //88
+		["frenchfry","french fries","frenchfries"], //89
+		["pardonme","pardon me"], //90
+		["mousetrap","mouse trap"], //91
+		["turnip"], //92
+		["phonenumbers","phone numbers","phone#","phone number"], //93
+		["uproar","uproarious"], //94
+		["thunderstorm","thunder storm","storm"], //95
+		["weekend","week end"], //96
+		// 97-108 keywords
+		["microscope","micro scope"], //97
+		["onenightstand","one night stand","one-night stand"], //98
+		["eyesockets","eye sockets","eye socket"], //99
+		["houseplant","house plant","potted plant"], //100
+		["neighbourhood","neighborhood","neighbour hood"], //101
+		["failure","fail"], //102
+		["headquarters","head quarters","hq"], //103
+		["blanket"], //104
+		["cutcorners","cut corners","cut-corners"], //105
+		["cocktail"], //106
+		["tennisshoes","tennis shoes","trainers"], //107
+		["summary","summery"] //108
 	];
 
 	const container = document.getElementById('puzzles');
