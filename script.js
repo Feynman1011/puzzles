@@ -276,3 +276,48 @@ if (document.readyState === 'loading') {
 } else {
 	init();
 }
+//to add: puzzles categories, guess the country, food, movie, song, etc. 
+// different levels of difficulty, timer, score tracking
+// multiplayer mode, hints system
+// mobile optimization, sound effects
+// share results on social media
+// daily challenges
+// user-submitted puzzles
+// adaptive difficulty based on performance
+// achievements and badges
+// leaderboard integration
+// themed puzzle packs (e.g., holidays, decades)
+// customizable avatars or profiles for players
+// in-game currency for hints or cosmetic items
+// tutorial mode for new players
+// offline mode to play without internet connection
+// regular updates with new puzzles
+// feedback system for users to suggest improvements or report issues
+// analytics to track popular puzzles and user engagement
+// integration with educational content for learning-based puzzles
+// seasonal events or limited-time puzzles
+// cross-platform playability (web, mobile, desktop apps)
+// accessibility features for players with disabilities
+// integration with streaming platforms for live puzzle-solving sessions
+// customizable background music or soundtracks during gameplay
+// puzzle-solving tips and strategies section
+// option to save progress and resume later
+// social features to invite friends and compete against them
+// option to change font styles and sizes for better readability
+// dark mode/light mode toggle for user interface
+// integration with puzzle-solving communities or forums
+// option to create and share custom puzzles with other players
+// regular newsletters with updates, tips, and featured puzzles
+// option to rate and review puzzles for quality feedback
+// notifications for new puzzle releases or events
+// customizable timer settings for different challenge modes
+// option to skip particularly difficult puzzles with a penalty
+// detailed statistics on player performance and improvement over time
+// integration with voice assistants for hands-free playing
+// option to change the language of the puzzles and interface
+// multiplayer chat feature for team-based puzzle solving
+// option to view puzzle solutions and explanations after attempts
+// option to adjust difficulty settings manually for personalized challenges
+// themed user interface skins based on puzzle categories or seasons
+// daily streak rewards for consistent play
+// option to bookmark favorite puzzles for easy access later
